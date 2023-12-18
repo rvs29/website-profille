@@ -1,0 +1,164 @@
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+
+nav {
+    background-color: #3c62a1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;    
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5rem;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600px;
+    padding: 8px 0;
+    margin-top: 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+}
+
+nav ul li a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.hero h1 {
+    color: white;
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem 2rem;
+    
+}
+
+figure img {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    margin-left: 70px;
+
+
+}
+
+
+article ul li {
+    padding: 1rem 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    list-style: none;
+
+
+
+}
+
+
+.check p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    padding: 1rem 4rem;
+    line-height: 25px;
+    font-size: 17px;
+    
+}
+
+.call h1 {
+    font-family: 'Courier New', monospace;
+    font-size: 30px;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+footer {
+    background-color: #3c62a1;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.icon { 
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+    
+}
+
+.icon a {
+    justify-content: center;
+    text-align: center;
+    padding: 1rem 2rem;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+
+}
+
+.icon a #href {
+    text-align: center;
+
+}
+
+.icon a:hover {
+    color: #3c62a1;
+    border-bottom: 2px solid;
+    transition: all;
+    transition-duration: 50ms;
+    border-bottom: 2px solid #3c63a100;
+
+
+}
+
+@media screen and (max-width: 922px) {
+    header.navbar-container {
+      flex-direction: column;
+    }
+   
+    header.navbar-container .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: .5rem;
+    }
+   
+    main {
+      padding: 1rem 3rem;
+    }
+   
+    main .content {
+      flex-direction: column;
+    }
+   
+    main .content .content-description .title {
+      font-size: 3rem;
+    }
+   
+    main .content .content-description p {
+      font-size: 1rem;
+
+    }
+   
+    main .content .content-image {
+      order: -1;
+    }
+
+  }
